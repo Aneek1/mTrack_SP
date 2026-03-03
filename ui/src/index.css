@@ -1,0 +1,82 @@
+:root {
+  color-scheme: dark;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.45;
+  font-weight: 400;
+  background: #0b0b0e;
+  color: #e6e6ef;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+button {
+  border-radius: 10px;
+  border: 1px solid #2a2a35;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  background: #14141b;
+  color: #e6e6ef;
+  cursor: pointer;
+}
+button:hover {
+  background: #191925;
+}
+
+.appRoot {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid #232331;
+  border-radius: 14px;
+  background: radial-gradient(1200px 400px at 20% 0%, #151528 0%, #0b0b0e 60%);
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.title {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #b6b6c7;
+}
+
+.contentGrid {
+  flex: 1;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 14px;
+}
+
+.boardPane,
+.sidePane {
+  min-height: 0;
+}
