@@ -11,8 +11,12 @@
 
 ## 🎬 Demo
 
+https://github.com/user-attachments/assets/mtrac_demo.mp4
+
 <p align="center">
-  <img src="./mtrac_coo_demo.webp" alt="mTrac Digital Twin Demo" width="800" />
+  <video src="./mtrac_demo.mp4" width="800" controls autoplay loop>
+    Your browser does not support the video tag. <a href="./mtrac_demo.mp4">Download the demo video</a>.
+  </video>
 </p>
 
 > The demo shows the full AI inspection lifecycle: **Generate Test Case → Load Board → AI Gantry Inspection → End Session with Metrics**. The gantry autonomously navigates the board, detects components using vision perception, and produces PASS/FAIL inspection results in real time.
