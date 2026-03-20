@@ -5,6 +5,21 @@
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue)
 ![Node](https://img.shields.io/badge/node-16%2B-green)
+![AI](https://img.shields.io/badge/AI-Gemini%20%7C%20OpenAI%20%7C%20Anthropic-purple)
+
+---
+
+## 🎬 Demo
+
+<p align="center">
+  <img src="./mtrac_coo_demo.webp" alt="mTrac Digital Twin Demo" width="800" />
+</p>
+
+> The demo shows the full AI inspection lifecycle: **Generate Test Case → Load Board → AI Gantry Inspection → End Session with Metrics**. The gantry autonomously navigates the board, detects components using vision perception, and produces PASS/FAIL inspection results in real time.
+
+<p align="center">
+  <img src="./docs/screenshot.png" alt="mTrac UI Screenshot" width="800" />
+</p>
 
 ---
 
@@ -122,11 +137,12 @@ bash dev_ui.sh
 
 ### 5. Use
 
-1. Open **http://localhost:5174** in your browser
-2. Click **"Generate Test Case"** — a random PCBA board is created and loaded
-3. Watch the AI gantry move, inspect components, and update **Inspection Results** in real time
-4. The **Thought Log** shows the AI's reasoning; the **Prompt/JSON Trace** shows raw LLM output
-5. Click **"End Session"** to see final performance metrics
+1. Open **http://localhost:5173** in your browser
+2. Click **"Generate Test Case"** — a random PCBA board is created
+3. Click **"Load Test Case"** — the board loads and AI inspection begins
+4. Watch the AI gantry move, inspect components, and update **Inspection Results** in real time
+5. The **Thought Log** shows the AI's reasoning; the **Prompt/JSON Trace** shows raw LLM output
+6. Click **"End Session"** to see final performance metrics
 
 ---
 
@@ -185,6 +201,8 @@ mTrac_SP/
 │   ├── vite.config.ts         # Vite config with API proxy to backend
 │   └── package.json
 ├── simulation/                # Legacy pygame prototype
+├── docs/                      # Screenshots and documentation assets
+├── mtrac_coo_demo.webp        # Demo video (animated WebP)
 ├── dev.sh                     # Start backend + frontend together
 ├── dev_backend.sh             # Start backend only
 ├── dev_ui.sh                  # Start frontend only
