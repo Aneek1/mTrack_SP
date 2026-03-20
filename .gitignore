@@ -184,6 +184,8 @@ demo_test_case.json
 test_*.py
 *_test.py
 tests/
+# Exception: test_generator.py is a production module, not a test file
+!backend/sim/test_generator.py
 
 # Documentation build
 docs/_build/
